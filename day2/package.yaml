@@ -1,0 +1,36 @@
+library:
+  source-dirs: src
+tests:
+  day2-test:
+    source-dirs: test
+    main: Spec.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - hspec
+    - day2
+copyright: MIT
+maintainer: sim@me.com
+dependencies:
+- base >= 4.7 && < 5
+name: day2
+version: 0.1.0.0
+extra-source-files:
+- README.md
+- ChangeLog.md
+author: Simone D&#39;Amico
+github: Neku/day2
+license: BSD3
+executables:
+  day2-exe:
+    source-dirs: app
+    main: Main.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - day2
+description: Please see the README on GitHub at <https://github.com/Neku/day2#readme>
